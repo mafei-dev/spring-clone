@@ -1,5 +1,7 @@
-package com.example.iocexample;
+package com.example.iocexample.core;
 
+import com.example.iocexample.annotation.Autowired;
+import com.example.iocexample.annotation.Component;
 import org.reflections.Reflections;
 
 import java.lang.reflect.Constructor;

@@ -1,14 +1,17 @@
-package com.example.iocexample;
+package com.example.iocexample.impl;
 
-@Bean(name = "MyBean")
-public class MyBean {
+import com.example.iocexample.annotation.Autowired;
+import com.example.iocexample.annotation.Component;
+
+@Component(name = "UserService")
+public class UserService {
     @Autowired
-    private String sample;
+    private UserDao userDao;
 
-    public MyBean() {
+    public UserService() {
     }
 
-    public void printNme(String name) {
-        System.out.println("The name is: " + name);
+    public void printNme() {
+        userDao.getUser();
     }
 }

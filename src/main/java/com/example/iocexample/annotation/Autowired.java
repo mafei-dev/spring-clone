@@ -1,4 +1,4 @@
-package com.example.iocexample;
+package com.example.iocexample.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
